@@ -1,0 +1,16 @@
+digraph sample {
+f1[label="Heart Rate"]
+f2[label="Exercise duration"]
+f3[label="Calories"]
+f4[label=" ..."]
+t1[label="Biking?"]
+t2[label="Running?"]
+f1->t1
+f2->t1
+f3->t1
+f4->t1
+f1->t2
+f2->t2
+f3->t2
+f4->t2
+}
