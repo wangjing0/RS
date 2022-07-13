@@ -1,0 +1,22 @@
+digraph training2{
+node [shape=box style=filled]
+size="10,10!" 
+n0[label="Training step 2" fillcolor=none penwidth=0 fontsize=20]
+n1[label="User Data" , penwidth=0]
+n20[label="Transformation
+ (encoding, feature engineering)" ]
+n30[label="Sport Predictor
+ (XGBoost Classifier)" ]
+
+n4[label="Calorie Predictor
+ (XGBoost Regressor) " fillcolor=yellow]
+nend[label="Calories" fillcolor=none,  penwidth=0 ]
+
+n0
+
+n1 -> n20 [label="without 'sport', 'calories'"]
+n20 ->n30
+n30 -> n4 [label="only use those 'sport' == 'sport_prediction'"]
+n4 -> nend
+
+}

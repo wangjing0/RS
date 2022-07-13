@@ -4,7 +4,7 @@ from explore_page import show_explore_page
 from HR_info_page import HR_info_page
 
 
-page = st.sidebar.selectbox("I Want To", ("Ask", "Explore", "Know some health trivia"))
+page = st.sidebar.selectbox("I Want To", ("Make a plan", "Explore", "Know some trivia"))
 
 def navigation():
     try:
@@ -16,7 +16,7 @@ def navigation():
 
 if page == "Explore":
     show_explore_page()
-elif page == "Ask":
+elif page == "Make a plan":
     show_predict_page()
 else:
     HR_info_page()

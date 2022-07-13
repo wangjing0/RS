@@ -5,7 +5,13 @@ from PIL import Image
 
 def HR_info_page():
     width = 600
-    st.title("...Trivia about heart health...")
+    st.title("...about heart health...")
+    #st.header("")
+    image = Image.open('./images/US_restingHR.webp')
+    st.image(image, caption=" ", width=width)
+    st.markdown('#')
+    image = Image.open('./images/countries_restingHR.png')
+    st.image(image, caption=" ", width=width)
     st.markdown('#')
     #st.header("Resting Heart Rate(bpm)")
     image = Image.open('./images/restingHR.jpeg')
@@ -23,12 +29,7 @@ def HR_info_page():
     image = Image.open('./images/Immediate-heart-rate-reponse.jpeg')
     st.image(image, caption=" ", width=width)
     st.markdown('#')
-    #st.header("")
-    image = Image.open('./images/countries_restingHR.png')
-    st.image(image, caption=" ", width=width)
-    st.markdown('#')
-    image = Image.open('./images/US_restingHR.webp')
-    st.image(image, caption=" ", width=width)
+   
     
     
     

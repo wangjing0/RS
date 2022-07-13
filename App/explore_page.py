@@ -19,7 +19,7 @@ def show_explore_page():
 
     st.write(
     """
-    ### Stack Overflow Developer Survey 2020
+    ### Geographic distribution of our users
     """
     )
     

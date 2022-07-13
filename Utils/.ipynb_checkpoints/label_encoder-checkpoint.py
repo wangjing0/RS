@@ -1,12 +1,10 @@
 import pandas as pd 
 import numpy as np
 
-
 class label_encoder(object):
-    def __init__(self, df=None):
+    def __init__(self, sports=[]):
         # unique label, counts in descending order
-        self.__NAME__ = 'Sport_LabelEncoder'
-        self.sports = list(df.sport.value_counts(ascending=False).index) 
+        self.sports = sports
         self.dmap = {sport:i for i,sport in enumerate(self.sports)}
         self.dmap_inverse = {i:sport for i,sport in enumerate(self.sports)}
         
@@ -18,6 +16,7 @@ class label_encoder(object):
 
 if __name__ == '__main__':
     df_raw = pd.read_pickle("./data/df_proper_cleaned.pkl")
-    code = label_encoder(df_raw).encoder(['bike','run'])
-    decode = label_encoder(df_raw).decoder(code)
-    code, decode
+    sports= list(df_raw.sport.value_counts(ascending=False).index) 
+    code = label_encoder(sports).encoder(['bike','run'])
+    decode = label_encoder(sports).decoder(code)
+    print(code, decode)

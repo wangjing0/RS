@@ -19,12 +19,9 @@ def show_explore_page():
 
     st.write(
     """
-    ### Stack Overflow Developer Survey 2020
+    ### Geographic distribution of our users
     """
     )
     
-    
     image = Image.open('./images/geo_density.png')
     st.image(image, caption="Users Over the world ",use_column_width=True)
-    
-    

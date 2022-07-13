@@ -36,7 +36,7 @@ class Transformer(object):
         for feature in features:
             if feature =='start_time':
                 date = pd.to_datetime(X[feature])
-                #df['year'] = date.dt.year
+                df['year'] = date.dt.year
                 df['month'] = date.dt.month
                 df['weekday'] = date.dt.weekday
             if feature =='gender':
