@@ -23,9 +23,9 @@ div.stButton > button:hover {
 
 
 def load_model():
-    gs_model1= joblib.load('models/gs_model_step1_xgbc.pkl') 
-    gs_model2= joblib.load('models/gs_model_step2_xgbr.pkl') 
-    X_mean = pd.read_pickle('models/X_mean.pkl')
+    gs_model1= joblib.load('gs_model_step1_xgbc.pkl') 
+    gs_model2= joblib.load('gs_model_step2_xgbr.pkl') 
+    X_mean = pd.read_pickle('X_mean.pkl')
     return gs_model1, gs_model2, X_mean
 
 gs_model1, gs_model2, X = load_model()
