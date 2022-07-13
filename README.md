@@ -4,9 +4,9 @@
 # Error Analysis
 
 # Depolyment
- An application for 
+ *Made an application for*
  * Explore data across different demographic groups, activity types, and etc.
- * Know some health facts.
+ * Learn some health facts.
  * Make a plan and know your result.
  
 
