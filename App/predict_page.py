@@ -81,3 +81,4 @@ def show_predict_page():
         X['start_time'] = start_time
         y = model_calorie.predict(X[features])
         st.subheader(f"Good job! The estimated calorie is * {np.int(y)} * cal.")
+    st.title("🏃 🚴 🏇 🏂 🏌️ 🏄 🚣 🏊 ⛹️  🏋️ 🤸 🤼 🤽 ")
