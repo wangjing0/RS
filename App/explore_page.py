@@ -9,7 +9,7 @@ from PIL import Image
 
 @st.cache
 def load_data():
-    df = pd.read_pickle("./models/df_proper_cleaned.pkl")
+    df = pd.read_pickle("models/df_proper_cleaned.pkl")
     return df
 
 df = load_data()
