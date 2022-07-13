@@ -1,7 +1,9 @@
-#
+# Data
+# EDA
+# Model
+# Error Analysis
 
-
-# Depolyment:
+# Depolyment
  An application for 
  * Explore data across different demographic groups, activity types, and etc.
  * Know some health facts.
