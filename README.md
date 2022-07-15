@@ -12,7 +12,7 @@
 
 </p>
 <p align="center">
-  <img src="https://github.com/wangjing0/RS/blob/main/AppFront.png" height="500" >
+  <img src="https://github.com/wangjing0/RS/blob/main/AppFront1.png" height="500" >
 </p>
 
 </p>
